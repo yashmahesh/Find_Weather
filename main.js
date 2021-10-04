@@ -12,7 +12,7 @@ const clk =document.getElementById("clk");
     my_city = cityname;
     API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${my_city}&appid=0c064be1a54bc58da877f505c0940ac5&units=metric`;
     const resp =  await fetch(API_URL);
-    // console.log(resp);
+     console.log(resp);
     if(resp.status == 200){
         const respData = await resp.json();
         createCityCard(respData);
